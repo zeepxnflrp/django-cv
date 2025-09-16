@@ -1,0 +1,99 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<header>
+    <h1>{{ cv.name }}</h1>
+    <p>
+        <a href="mailto:{{ cv.email }}"> {{ cv.email }}</a>
+        - <a href="tel:{{ cv.phone }}"> {{ cv.phone }}</a>
+        {% if cv.links %}
+            {% for link in cv.links %} 
+                - <a href="{{ link.url }}">{{ link.platform }}</a>
+            {% endfor %}
+        {% endif %}
+    </p>
+</header>
+
+<main>
+
+<div>
+    <h2> Education </h2>
+    {% for ed in cv.education %}
+        <p>
+            <strong>{{ ed.degree }}</strong>, {{ ed.school }} — <em>{{ ed.location }}</em> [{{ ed.grad }}]
+            <br>
+            {% if ed.courses %}
+                <em>Courses:</em> {{ ed.courses|join:", " }}
+            {% endif %}
+        </p>
+    {% endfor %}
+</div>
+
+<div>
+    <h2> Skills </h2>
+    <ul>
+        {% for grp, items in cv.skills.items %}
+            {% if items %}
+                <li>
+                    <strong>{{ grp }}</strong>
+                    {{ items|join:", "}}
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
+<div>
+    <h2> Work Experience </h2>
+    <ul>
+        {% for wrkex in cv.experience %}
+            <li>
+                <strong>{{ wrkex.title }}</strong>, {{ wrkex.company }}
+                - <em>{{ wrkex.location }}</em>
+
+                <span>
+                    [{{ wrkex.start|default:"" }} - {{ wrkex.end|default:"Present" }}]
+                </span>
+
+                <ul>
+                    {% for descrp in wrkex.descrip %}
+                        {% if descrp %}
+                        <li>{{ descrp }}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </li>
+    
+        {% endfor %}
+    </ul>
+</div>
+
+<div>
+    <h2> Projects </h2>
+    <ul>
+        {% for proj in cv.projects %}
+        <li>
+            {% if proj.url %}
+                <a href="{{ proj.url }}">
+                    <strong>{{ proj.name }}</strong>
+                </a>
+            {% else %}
+                <strong>
+                    {{ proj.name }}
+                </strong>
+            {% endif %}
+            | <em>{{ proj.techstack }}</em>
+
+            <ul>
+                {% for descrp in proj.descrip %}
+                    <li>{{ descrp }}</li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+</main>
+
+{% endblock %}

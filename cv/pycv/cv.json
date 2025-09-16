@@ -1,0 +1,123 @@
+{
+  "name": "Baani Kaur Pasrija",
+  "email": "baani@nyu.edu",
+  "phone": "917-588-5895",
+  "links": [
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/baani-kaur-pasrija-84aa3216b/" },
+    { "platform": "GitHub",   "url": "https://github.com/zeepxnflrp" },
+    { "platform": "Portfolio","url": "https://www.baani.dev/" }
+  ],
+
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "school": "NYU Tandon School of Engineering",
+      "location": "Brooklyn, NY",
+      "grad": "May 2027",
+      "courses": ["Software Engineering", "Artificial Intelligence", "Machine Learning"]
+    },
+    {
+      "degree": "Bachelor of Arts in Computer Science and Economics",
+      "school": "New York University",
+      "location": "New York, NY",
+      "grad": "May 2024",
+      "courses": [
+        "Software Engineering", "Artificial Intelligence", "Data Structures", "Algorithms",
+        "Computer Systems Organization", "Operating Systems", "Computer Graphics",
+        "Discrete Mathematics", "Computer Security", "Linear Algebra", "Calculus I-III"
+      ]
+    }
+  ],
+
+  "skills": {
+    "Languages": ["Python", "JavaScript", "Java", "C/C++", "BASH", "TypeScript", "HTML", "CSS", "R", "LaTeX"],
+    "Frameworks / Libraries": ["React", "React Native", "Next", "Flask", "PyTorch", "Selenium", "Jinja2", "NumPy"],
+    "Databases": ["SQL", "MongoDB"],
+    "Tools": ["Figma", "Canva"],
+    "Developer Tools": ["Git", "GitHub", "Docker", "AWS (S3)", "Digital Ocean", "Virtual Environments"]
+  },
+
+  "experience": [
+    {
+      "title": "Full Stack Software Developer",
+      "company": "Autism Technology Research Syndicate (AUTRS)",
+      "location": "Chesterbrook, PA",
+      "start": "September 2024",
+      "end": "December 2024",
+      "descrip": [
+        "Collaborated on the SEAL project, developing features for a teaching app aimed at improving curriculum accessibility for educators.",
+        "Implemented the interface for teachers to input curriculum, integrating it with existing backend systems to ensure seamless database updates.",
+        "Developed a backend page direction function to dynamically route users to the appropriate page based on input/output IDs, ensuring accurate display of associated curriculum content."
+      ]
+    },
+    {
+      "title": "Robotic Process Automation Intern",
+      "company": "Virim Infotech",
+      "location": "Indore, India",
+      "start": "Jun. 2023",
+      "end": "Aug. 2023",
+      "descrip": [
+        "Developed a strong foundation in robotic process automation.",
+        "Increased business operation efficiency by 80% through participation in the creation and deployment of unattended bots hosted on servers to meet client needs.",
+        "Supported data extraction and invoice processing using Robotic Enterprise Framework, attended/unattended bots, triggers, dispatcher/performer patterns, and web/screen scraping."
+      ]
+    },
+    {
+      "title": "Events Assistant",
+      "company": "NYU Athletics",
+      "location": "New York, NY",
+      "start": "Sep. 2021",
+      "end": "May 2023",
+      "descrip": [
+        "Managed logistics for sporting events with 300+ attendees, coordinating setup, guest list management, and team structure.",
+        "Onboarded and trained new staff on established protocols and procedures."
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "TikTalk",
+      "url": "https://github.com/zeepxnflrp/TikTalk",
+      "techstack": "Flask, JavaScript, Docker, Continuous Integration / Continuous Deployment, Digital Ocean",
+      "link": "",
+      "descrip": [
+        "Focused on backend development using LangChain to create diverse AI personalities.",
+        "Designed a user-friendly messaging interface supporting multiple users.",
+        "Set up GitHub Actions for efficient CI/CD and developed unit tests."
+      ]
+    },
+    {
+      "name": "Sing & Sync",
+      "url": "https://github.com/zeepxnflrp/Sing-Sync",
+      "techstack": "Flask, Docker, AWS S3, Unit Testing, CI / CD",
+      "link": "",
+      "descrip": [
+        "Developed backend features for detecting note onsets, estimating durations and tempo, and processing music data.",
+        "Wrote unit tests and managed CRUD operations.",
+        "Transformed voices into MIDI through machine learning."
+      ]
+    },
+    {
+      "name": "ArtRoam",
+      "url": "https://github.com/zeepxnflrp/ArtRoam",
+      "techstack": "Flask, AWS S3, MongoDB, HTML, Jinja2, CSS",
+      "link": "",
+      "descrip": [
+        "Built an artist-focused social web app enabling uploads via camera or file.",
+        "Implemented favorites/gallery, posts, and profile management.",
+        "Integrated SHA-1–based authentication for account access."
+      ]
+    },
+    {
+      "name": "CaptionNet",
+      "techstack": "PyTorch, Neural Networks (CNNs & RNNs), Natural Language Processing (NLP)",
+      "link": "",
+      "descrip": [
+        "Developed an image caption generator using CNNs for feature extraction and RNNs for caption generation.",
+        "Implemented data preprocessing, model training, and evaluation.",
+        "Achieved strong results on a Modified NIST dataset."
+      ]
+    }
+  ]
+}
